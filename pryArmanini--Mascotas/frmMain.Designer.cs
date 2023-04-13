@@ -39,6 +39,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAlimentar = new System.Windows.Forms.Button();
             this.lblVete = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -154,12 +155,23 @@
             this.lblVete.TabIndex = 11;
             this.lblVete.Text = "VETERINARIA";
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(496, 501);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(88, 40);
+            this.btnSalir.TabIndex = 12;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(596, 553);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblVete);
             this.Controls.Add(this.btnAlimentar);
             this.Controls.Add(this.pictureBox1);
@@ -193,6 +205,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnAlimentar;
         private System.Windows.Forms.Label lblVete;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
 

@@ -63,7 +63,7 @@ namespace pryArmanini__Mascotas
 
         private void lstAnimales_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //if (listMascotas.Text == "Perro Golden")
+            //if (lstAnimales.Text == "Perro Golden")
             //{
 
             //    fotoMascota.Image = Image.FromFile("perro-golden.jpg");
@@ -79,6 +79,11 @@ namespace pryArmanini__Mascotas
             //        lblTipo.Visible = true;
             //        lblEdad.Visible = true;
             //    }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
