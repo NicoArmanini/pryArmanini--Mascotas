@@ -50,15 +50,15 @@ namespace pryArmanini__Mascotas
         {
             txtNombre.Clear();
             txtEdad.Clear();
-            cmbTipo.SelectedIndex = -1;
+            cmbTipo.SelectedIndex = 0;
         }
 
         private void btnAlimentar_Click(object sender, EventArgs e)
         {   
-            clsMacota Alimentar = new clsMacota();
-           
-            Alimentar.Nombre = lstAnimales.SelectedItem.ToString();
-            MessageBox.Show(Alimentar.AlimentarMascota());
+            clsMacota objAlimentar = new clsMacota();
+            
+            objAlimentar.Nombre = lstAnimales.SelectedIndex.ToString(objAlimentar.ListaAnimales);
+            MessageBox.Show(objAlimentar.AlimentarMascota());
         }
 
         private void lstAnimales_SelectedIndexChanged(object sender, EventArgs e)
@@ -79,7 +79,7 @@ namespace pryArmanini__Mascotas
             //        lblTipo.Visible = true;
             //        lblEdad.Visible = true;
             //    }
-        }
+            }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {

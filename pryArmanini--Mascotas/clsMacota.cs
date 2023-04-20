@@ -12,10 +12,11 @@ namespace pryArmanini__Mascotas
         public int Edad { get; set; }
         public string Tipo { get; set; }
 
+        public string Lista { get; set; }
         public string ListaAnimales { get; set; }
         public string AlimentarMascota()
         {
-            return Nombre + " ha sido alimentado correctamente";
+            return Lista + " ha sido alimentado correctamente";
         }
 
 
