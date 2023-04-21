@@ -13,9 +13,6 @@ namespace pryArmanini__Mascotas
 {
     public partial class frmMain : Form
     {
-      
-        List<clsMacota> ListarMascota = new List<clsMacota>();
-        //Listar los string y los int de clsMascota creando un nuevo objeto llamado ListarMascota
         public frmMain()
         {
             InitializeComponent();
@@ -23,6 +20,9 @@ namespace pryArmanini__Mascotas
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            List<clsMacota> ListarMascota = new List<clsMacota>();
+            //Listar los string y los int de clsMascota creando un nuevo objeto llamado ListarMascota
+
             clsMacota objMascota = new clsMacota(); //indexar es el new y crea un nuevo objeto en la memoria
 
             objMascota.Nombre = txtNombre.Text; //traemos el string Nombre de la cslMascota y
@@ -36,10 +36,10 @@ namespace pryArmanini__Mascotas
 
             MessageBox.Show("Datos cargados correctamente");
 
-            foreach (clsMacota leer in ListarMascota)
+            foreach (clsMacota item in ListarMascota)
             {
-                lstAnimales.Items.Add(leer.Nombre);
-                //+" || " + leer.Edad + " || " + leer.Tipo
+                lstAnimales.Items.Add(item.Tipo);
+                //+" || " + item.Nombre + " || " + item.Edad
             }
 
             LimpiarControles();
@@ -50,14 +50,15 @@ namespace pryArmanini__Mascotas
         {
             txtNombre.Clear();
             txtEdad.Clear();
-            cmbTipo.SelectedIndex = 0;
+            cmbTipo.SelectedIndex = -1;
         }
 
         private void btnAlimentar_Click(object sender, EventArgs e)
-        {   
+        {
             clsMacota objAlimentar = new clsMacota();
-            
-            objAlimentar.Nombre = lstAnimales.SelectedIndex.ToString(objAlimentar.ListaAnimales);
+
+            objAlimentar.Nombre = lstAnimales.SelectedItem.ToString();
+
             MessageBox.Show(objAlimentar.AlimentarMascota());
         }
 
