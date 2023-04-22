@@ -37,9 +37,12 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lstAnimales = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAlimentar = new System.Windows.Forms.Button();
             this.lblVete = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnPasear = new System.Windows.Forms.Button();
+            this.btnJugar = new System.Windows.Forms.Button();
+            this.btnMimos = new System.Windows.Forms.Button();
+            this.btnAlimentar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,8 +97,12 @@
             this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipo.FormattingEnabled = true;
             this.cmbTipo.Items.AddRange(new object[] {
-            "Perro",
-            "Gato"});
+            "Caniche",
+            "Perro Salchicha",
+            "Gato Siames",
+            "Tortuga",
+            "Loro Hablador",
+            "Hamster Ruso"});
             this.cmbTipo.Location = new System.Drawing.Point(169, 157);
             this.cmbTipo.Margin = new System.Windows.Forms.Padding(4);
             this.cmbTipo.Name = "cmbTipo";
@@ -120,7 +127,7 @@
             this.lstAnimales.Location = new System.Drawing.Point(37, 224);
             this.lstAnimales.Margin = new System.Windows.Forms.Padding(4);
             this.lstAnimales.Name = "lstAnimales";
-            this.lstAnimales.Size = new System.Drawing.Size(231, 196);
+            this.lstAnimales.Size = new System.Drawing.Size(240, 196);
             this.lstAnimales.TabIndex = 8;
             this.lstAnimales.SelectedIndexChanged += new System.EventHandler(this.lstAnimales_SelectedIndexChanged);
             // 
@@ -134,24 +141,13 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // btnAlimentar
-            // 
-            this.btnAlimentar.Location = new System.Drawing.Point(27, 443);
-            this.btnAlimentar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAlimentar.Name = "btnAlimentar";
-            this.btnAlimentar.Size = new System.Drawing.Size(108, 38);
-            this.btnAlimentar.TabIndex = 10;
-            this.btnAlimentar.Text = "Alimentar";
-            this.btnAlimentar.UseVisualStyleBackColor = true;
-            this.btnAlimentar.Click += new System.EventHandler(this.btnAlimentar_Click);
-            // 
             // lblVete
             // 
             this.lblVete.AutoSize = true;
             this.lblVete.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVete.Location = new System.Drawing.Point(162, 9);
             this.lblVete.Name = "lblVete";
-            this.lblVete.Size = new System.Drawing.Size(259, 39);
+            this.lblVete.Size = new System.Drawing.Size(246, 38);
             this.lblVete.TabIndex = 11;
             this.lblVete.Text = "VETERINARIA";
             // 
@@ -165,12 +161,56 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // btnPasear
+            // 
+            this.btnPasear.Location = new System.Drawing.Point(37, 442);
+            this.btnPasear.Name = "btnPasear";
+            this.btnPasear.Size = new System.Drawing.Size(117, 38);
+            this.btnPasear.TabIndex = 13;
+            this.btnPasear.Text = "Pasear";
+            this.btnPasear.UseVisualStyleBackColor = true;
+            this.btnPasear.Click += new System.EventHandler(this.btnPasear_Click);
+            // 
+            // btnJugar
+            // 
+            this.btnJugar.Location = new System.Drawing.Point(37, 497);
+            this.btnJugar.Name = "btnJugar";
+            this.btnJugar.Size = new System.Drawing.Size(117, 38);
+            this.btnJugar.TabIndex = 14;
+            this.btnJugar.Text = "Jugar";
+            this.btnJugar.UseVisualStyleBackColor = true;
+            this.btnJugar.Click += new System.EventHandler(this.btnJugar_Click);
+            // 
+            // btnMimos
+            // 
+            this.btnMimos.Location = new System.Drawing.Point(160, 498);
+            this.btnMimos.Name = "btnMimos";
+            this.btnMimos.Size = new System.Drawing.Size(117, 38);
+            this.btnMimos.TabIndex = 15;
+            this.btnMimos.Text = "Mimos";
+            this.btnMimos.UseVisualStyleBackColor = true;
+            this.btnMimos.Click += new System.EventHandler(this.btnMimos_Click);
+            // 
+            // btnAlimentar
+            // 
+            this.btnAlimentar.Location = new System.Drawing.Point(160, 442);
+            this.btnAlimentar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAlimentar.Name = "btnAlimentar";
+            this.btnAlimentar.Size = new System.Drawing.Size(117, 38);
+            this.btnAlimentar.TabIndex = 10;
+            this.btnAlimentar.Text = "Alimentar";
+            this.btnAlimentar.UseVisualStyleBackColor = true;
+            this.btnAlimentar.Click += new System.EventHandler(this.btnAlimentar_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(596, 553);
+            this.Controls.Add(this.btnMimos);
+            this.Controls.Add(this.btnJugar);
+            this.Controls.Add(this.btnPasear);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblVete);
             this.Controls.Add(this.btnAlimentar);
@@ -203,9 +243,12 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.ListBox lstAnimales;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnAlimentar;
         private System.Windows.Forms.Label lblVete;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnPasear;
+        private System.Windows.Forms.Button btnJugar;
+        private System.Windows.Forms.Button btnMimos;
+        private System.Windows.Forms.Button btnAlimentar;
     }
 }
 

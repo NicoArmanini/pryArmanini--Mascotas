@@ -53,15 +53,6 @@ namespace pryArmanini__Mascotas
             cmbTipo.SelectedIndex = -1;
         }
 
-        private void btnAlimentar_Click(object sender, EventArgs e)
-        {
-            clsMacota objAlimentar = new clsMacota();
-
-            objAlimentar.Nombre = lstAnimales.SelectedItem.ToString();
-
-            MessageBox.Show(objAlimentar.AlimentarMascota());
-        }
-
         private void lstAnimales_SelectedIndexChanged(object sender, EventArgs e)
         {
             //if (lstAnimales.Text == "Perro Golden")
@@ -80,11 +71,47 @@ namespace pryArmanini__Mascotas
             //        lblTipo.Visible = true;
             //        lblEdad.Visible = true;
             //    }
-            }
+        }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnPasear_Click(object sender, EventArgs e)
+        {
+            clsMacota objPasear = new clsMacota();
+
+            objPasear.Tipo = lstAnimales.SelectedItem.ToString();
+
+            MessageBox.Show(objPasear.PasearMascota());
+        }
+
+        private void btnAlimentar_Click(object sender, EventArgs e)
+        {
+            clsMacota objAlimentar = new clsMacota();
+
+            objAlimentar.Tipo = lstAnimales.SelectedItem.ToString();
+
+            MessageBox.Show(objAlimentar.AlimentarMascota());
+        }
+
+        private void btnJugar_Click(object sender, EventArgs e)
+        {
+            clsMacota objJugar = new clsMacota();
+
+            objJugar.Tipo = lstAnimales.SelectedItem.ToString();
+
+            MessageBox.Show(objJugar.JugarMascota());
+        }
+
+        private void btnMimos_Click(object sender, EventArgs e)
+        {
+            clsMacota objMimos = new clsMacota();
+
+            objMimos.Tipo = lstAnimales.SelectedItem.ToString();
+
+            MessageBox.Show(objMimos.MimosMascota());
         }
     }
 }
