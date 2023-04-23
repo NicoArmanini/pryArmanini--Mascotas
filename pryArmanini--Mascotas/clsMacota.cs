@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace pryArmanini__Mascotas
         public string Nombre { get; set; }
         public int Edad { get; set; }
         public string Tipo { get; set; }
-
+        public Image Mascotas { get; set; }
         public string AlimentarMascota()
         {
             return Tipo + " ha sido alimentado correctamente";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblEdad = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
@@ -36,14 +37,14 @@
             this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lstAnimales = new System.Windows.Forms.ListBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblVete = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnPasear = new System.Windows.Forms.Button();
             this.btnJugar = new System.Windows.Forms.Button();
             this.btnMimos = new System.Windows.Forms.Button();
             this.btnAlimentar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picMascotas = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picMascotas)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNombre
@@ -131,16 +132,6 @@
             this.lstAnimales.TabIndex = 8;
             this.lstAnimales.SelectedIndexChanged += new System.EventHandler(this.lstAnimales_SelectedIndexChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(313, 224);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(192, 158);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
             // lblVete
             // 
             this.lblVete.AutoSize = true;
@@ -202,6 +193,17 @@
             this.btnAlimentar.UseVisualStyleBackColor = true;
             this.btnAlimentar.Click += new System.EventHandler(this.btnAlimentar_Click);
             // 
+            // picMascotas
+            // 
+            this.picMascotas.Image = ((System.Drawing.Image)(resources.GetObject("picMascotas.Image")));
+            this.picMascotas.Location = new System.Drawing.Point(331, 243);
+            this.picMascotas.Margin = new System.Windows.Forms.Padding(4);
+            this.picMascotas.Name = "picMascotas";
+            this.picMascotas.Size = new System.Drawing.Size(192, 158);
+            this.picMascotas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picMascotas.TabIndex = 9;
+            this.picMascotas.TabStop = false;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -214,7 +216,7 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblVete);
             this.Controls.Add(this.btnAlimentar);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picMascotas);
             this.Controls.Add(this.lstAnimales);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.cmbTipo);
@@ -226,7 +228,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
             this.Text = "Veterinaria";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMascotas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,7 +244,7 @@
         private System.Windows.Forms.ComboBox cmbTipo;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.ListBox lstAnimales;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picMascotas;
         private System.Windows.Forms.Label lblVete;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnPasear;

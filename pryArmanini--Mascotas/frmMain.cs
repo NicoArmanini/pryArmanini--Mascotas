@@ -51,10 +51,26 @@ namespace pryArmanini__Mascotas
             txtNombre.Clear();
             txtEdad.Clear();
             cmbTipo.SelectedIndex = -1;
+
         }
+
 
         private void lstAnimales_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+            if (lstAnimales.Text == "Caniche")
+            {
+                
+            }
+            else
+            {
+                if (lstAnimales.Text == "Perro Salchicha")
+                {
+                    picMascotas.Image = Image.FromFile("Perro-salchicha.jpg");
+                }
+            }
+
+
             //if (lstAnimales.Text == "Perro Golden")
             //{
 
