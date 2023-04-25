@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblEdad = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
@@ -223,8 +224,10 @@
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.lblEdad);
             this.Controls.Add(this.lblNombre);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Veterinaria";
             ((System.ComponentModel.ISupportInitialize)(this.picMascotas)).EndInit();
             this.ResumeLayout(false);
