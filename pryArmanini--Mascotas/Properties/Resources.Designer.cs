@@ -63,6 +63,16 @@ namespace pryArmanini__Mascotas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Boxer {
+            get {
+                object obj = ResourceManager.GetObject("Boxer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Caniche {
             get {
                 object obj = ResourceManager.GetObject("Caniche", resourceCulture);
@@ -73,9 +83,39 @@ namespace pryArmanini__Mascotas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Perro_salchicha {
+        internal static System.Drawing.Bitmap Gato {
             get {
-                object obj = ResourceManager.GetObject("Perro-salchicha", resourceCulture);
+                object obj = ResourceManager.GetObject("Gato", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hamster {
+            get {
+                object obj = ResourceManager.GetObject("Hamster", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Loro {
+            get {
+                object obj = ResourceManager.GetObject("Loro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tortuga {
+            get {
+                object obj = ResourceManager.GetObject("Tortuga", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

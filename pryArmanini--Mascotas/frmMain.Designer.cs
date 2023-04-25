@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblEdad = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
@@ -99,11 +98,11 @@
             this.cmbTipo.FormattingEnabled = true;
             this.cmbTipo.Items.AddRange(new object[] {
             "Caniche",
-            "Perro Salchicha",
-            "Gato Siames",
+            "Boxer",
+            "Gato",
             "Tortuga",
-            "Loro Hablador",
-            "Hamster Ruso"});
+            "Loro",
+            "Hamster"});
             this.cmbTipo.Location = new System.Drawing.Point(169, 157);
             this.cmbTipo.Margin = new System.Windows.Forms.Padding(4);
             this.cmbTipo.Name = "cmbTipo";
@@ -144,9 +143,9 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(496, 501);
+            this.btnSalir.Location = new System.Drawing.Point(486, 501);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(88, 40);
+            this.btnSalir.Size = new System.Drawing.Size(98, 43);
             this.btnSalir.TabIndex = 12;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -195,7 +194,6 @@
             // 
             // picMascotas
             // 
-            this.picMascotas.Image = ((System.Drawing.Image)(resources.GetObject("picMascotas.Image")));
             this.picMascotas.Location = new System.Drawing.Point(331, 243);
             this.picMascotas.Margin = new System.Windows.Forms.Padding(4);
             this.picMascotas.Name = "picMascotas";

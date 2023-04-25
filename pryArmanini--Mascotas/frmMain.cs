@@ -57,36 +57,9 @@ namespace pryArmanini__Mascotas
 
         private void lstAnimales_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            if (lstAnimales.Text == "Caniche")
-            {
-                
-            }
-            else
-            {
-                if (lstAnimales.Text == "Perro Salchicha")
-                {
-                    picMascotas.Image = Image.FromFile("Perro-salchicha.jpg");
-                }
-            }
+            picMascotas.ImageLocation = "C:/Users/Nico/source/repos/pryArmanini--Mascotas/pryArmanini--Mascotas/Fotos/" + lstAnimales.Text + ".jpg";
 
 
-            //if (lstAnimales.Text == "Perro Golden")
-            //{
-
-            //    fotoMascota.Image = Image.FromFile("perro-golden.jpg");
-            //    lblTipo.Visible = true;
-            //    lblEdad.Visible = true;
-
-            //}
-            //else
-            //{
-            //    if (cmbTipo.Text == "Gato Persa")
-            //    {
-            //        fotoMascota.Image = Image.FromFile("gato-persa.jpg");
-            //        lblTipo.Visible = true;
-            //        lblEdad.Visible = true;
-            //    }
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

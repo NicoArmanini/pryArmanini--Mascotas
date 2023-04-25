@@ -118,10 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Caniche" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Fotos\Caniche.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Boxer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\fotos\Boxer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Perro-salchicha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Fotos\Perro-salchicha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Caniche" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\fotos\Caniche.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gato" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\fotos\Gato.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hamster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\fotos\Hamster.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Loro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\fotos\Loro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tortuga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\fotos\Tortuga.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
